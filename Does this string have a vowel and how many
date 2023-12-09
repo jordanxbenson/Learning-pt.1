@@ -1,0 +1,22 @@
+text = (input('Please type a word: '))
+text
+def havevowels(text):
+    vowel = ['a', 'e', 'i', 'o', 'u']
+    for i in range(len(text)):
+        if text[i] in vowel:
+            return True
+print('Does it have vowels?: ', havevowels(text))
+pt2= (input('Would you like to know how many vowels? Y/N:'))
+
+pt2
+if pt2 == ('Y'):
+    def vowelcount(text):
+        vowel = "aeiouAEIOU"
+        vcount= 0
+        for char in text:
+            if char in vowel:
+                vcount = vcount+1
+        return vcount
+    print(vowelcount(text))
+if pt2 == ('N'):
+    print("ok :(")
